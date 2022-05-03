@@ -74,15 +74,15 @@
             to { height:80%; }          
         }
 
-        .bar-percent{
-            display: inline-block;
-            width: 33%;
-            margin-left: 12%;
-            margin-top: 5%;
+        .bar-footer {
+            position:absolute;
+            margin-top:320px;
         }
 
-        h2{
+        p {
+            font-weight: bold;
             text-align: center;
+            margin-top:60px;
         }
 
     </style>
@@ -92,24 +92,18 @@
         <div class="bar-chart">
             <div class="bar">
                 <div class="bar-inner bar-inner-1"></div>
+                <div class="bar-footer">30%</div>
             </div>
             <div class="bar">
                 <div class="bar-inner bar-inner-2"></div>
+                <div class="bar-footer">40%</div>
             </div>
             <div class="bar">
                 <div class="bar-inner bar-inner-3"></div>
+                <div class="bar-footer">80%</div>
             </div>
-           
-            <div class="bar-percent">
-                <div>30%</div>
-                <div>30%</div>
-                <div>30%</div>
-            </div>   
-            
-            
-            <h2>Bar Plot</h2>
+            <p> Bar Plot</p>
         </div>
-        
     </main>    
 </body>
 </html>
