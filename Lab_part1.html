@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu with Submenu</title>
+    <style>
+            body {
+                margin: 0;
+            }
+            .heading{
+                padding: 0.5em;
+                margin: 0;
+                background-color: red;
+                text-align: center;
+            }
+
+            .heading h1{
+                margin:0;
+            }
+
+            .menu{
+                background-color: #777;
+                position: -webkit-sticky;
+                position: sticky;
+                top:0px;
+            }
+
+            .menu-group{
+                padding: 0;
+                margin: 0;
+            }
+
+            .menu-group > li{
+                display: inline-block;
+                padding: 0.5em;
+            }
+
+            .menu-group > li:hover{
+                background-color: black;
+            }
+
+            .menu-group > li a{
+                color: white;
+                text-decoration: none;
+            }
+
+            .sub-menu-group-container{
+                position: relative;
+            }
+
+            .sub-menu-group{
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+
+            .sub-menu-group-container:hover .sub-menu-group{
+                display: block;
+            }
+
+            .sub-menu-group > li:hover{
+                background-color: #ddd;
+            }
+
+            .sub-menu-group >li a {
+                display:inline-block;
+                width:120px;
+                padding: 0.5em;
+                color:black;
+            }
+
+            .sub-menu-group > li:hover a{
+                color: white;
+            }
+            
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="heading">Demo of Dropdown</h1>
+    </header>
+
+    <nav class="menu">
+        <ul class="menu-group">
+            <li>
+                <a href="#"> Link 1 </a>
+            </li>
+            <li class="sub-menu-group-container">
+                <a href="#"> Link 2 </a>
+                <ul class="sub-menu-group">
+                    <li>
+                        <a href="#"> DD_Link_1</a>
+                    </li>
+                    <li>
+                        <a href="#"> DD_Link_2</a>
+                    </li>
+                    <li>
+                        <a href="#"> DD_Link_3</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sub-menu-group-container">
+                <a href="#"> Link 2 </a>
+                <ul class="sub-menu-group">
+                    <li>
+                        <a href="#"> DD_Link_1</a>
+                    </li>
+                    <li>
+                        <a href="#"> DD_Link_2</a>
+                    </li>
+                    <li>
+                        <a href="#"> DD_Link_3</a>
+                    </li>
+                </ul>
+            </li>  
+        </ul>
+    </nav>
+    
+</body>
+</html>
